@@ -18,9 +18,8 @@
                   <div class="login-signup-wrap px-4 px-lg-5 my-5">
                       <div class="mb-5 text-center">
                           <h5 class="h3">Sigup</h5>
-                          <p class="text-muted mb-0">Made with love by developers for developers.</p>
                       </div>
-                      <form class="login-signup-form">
+                      <form class="login-signup-form" [formGroup]="RegisterForm" (ngSubmit)="onSubmit()">
                           <div class="form-group">
                               <!-- Label -->
                               <label class="pb-1">
@@ -31,7 +30,7 @@
                                   <div class="input-icon">
                                       <span class="ti-user color-primary"></span>
                                   </div>
-                                  <input type="text" class="form-control" placeholder="Enter your name">
+                                  <input type="text" class="form-control" formControlName="name" placeholder="Enter your name">
                               </div>
                           </div>
                           <div class="form-group">
@@ -44,7 +43,7 @@
                                   <div class="input-icon">
                                       <span class="ti-email color-primary"></span>
                                   </div>
-                                  <input type="email" class="form-control" placeholder="name@address.com">
+                                  <input type="email" class="form-control" formControlName="email" placeholder="name@address.com">
                               </div>
                           </div>
 
@@ -59,14 +58,7 @@
                                   <div class="input-icon">
                                       <span class="ti-lock color-primary"></span>
                                   </div>
-                                  <input type="password" class="form-control" placeholder="Enter your password">
-                              </div>
-                          </div>
-
-                          <div class="my-4">
-                              <div class="custom-control custom-checkbox mb-3">
-                                  <input type="checkbox" class="custom-control-input" id="check-terms">
-                                  <label class="custom-control-label" for="check-terms">I agree to the <a href="terms-condition.html">terms and conditions</a></label>
+                                  <input type="password" class="form-control" formControlName="password" placeholder="Enter your password">
                               </div>
                           </div>
 
@@ -76,7 +68,7 @@
                           </button>
                           <div class="text-center">
                               <small class="text-muted text-center">
-                                  Already have an account? <a href="login.html">Log in</a>.
+                                  Already have an account? <a routerLink="/login">Log in</a>.
                               </small>
                           </div>
                       </form>

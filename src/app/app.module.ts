@@ -24,6 +24,20 @@ import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../environement/environement';
 import { ForgortPasswordComponent } from './forgort-password/forgort-password.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
+import { NetworkComponent } from './network/network.component';
+import { PartnersComponent } from './partners/partners.component';
+import { SharedHostingComponent } from './shared-hosting/shared-hosting.component';
+import { FaServerComponent } from './fa-server/fa-server.component';
+import { WpHostingComponent } from './wp-hosting/wp-hosting.component';
+import { SharedWpHostingComponent } from './shared-wp-hosting/shared-wp-hosting.component';
+import { EmailHostingComponent } from './email-hosting/email-hosting.component';
+import { CloudHostingComponent } from './cloud-hosting/cloud-hosting.component';
+import { DedicatedServerHostingComponent } from './dedicated-server-hosting/dedicated-server-hosting.component';
+import { VpsHostingComponent } from './vps-hosting/vps-hosting.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +53,21 @@ import { ForgortPasswordComponent } from './forgort-password/forgort-password.co
     ServicesComponent,
     PriceComponent,
     FeatureComponent,
-    ForgortPasswordComponent
+    ForgortPasswordComponent,
+    HomeComponent,
+    AboutComponent,
+    BlogComponent,
+    NetworkComponent,
+    PartnersComponent,
+    SharedHostingComponent,
+    FaServerComponent,
+    WpHostingComponent,
+    SharedWpHostingComponent,
+    EmailHostingComponent,
+    CloudHostingComponent,
+    DedicatedServerHostingComponent,
+    VpsHostingComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
